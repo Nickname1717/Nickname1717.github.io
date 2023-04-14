@@ -1,5 +1,5 @@
 ---
-title: 初识GNN
+![image-20230414150932469](../img/gnn/image-20230414150932469.png)title: 初识GNN
 catalog: true
 date: 2023-04-12 13:01:28
 subtitle: 斯坦福Machine Learning with Graphs
