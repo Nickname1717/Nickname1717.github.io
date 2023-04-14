@@ -16,7 +16,7 @@ tags:
 
 图的种类
 
-![image-20230413165416997](gnn.assets/image-20230413165416997.png)
+![image-20230414121900420](gnn/image-20230414121900420.png)
 
 
 
@@ -28,7 +28,7 @@ How do we take advantage ofrelational structure for betterprediction?
 
 目前的machine learning 模型
 
-![image-20230413161006250](D:\blog2023\hexo-beantech\source\img\image-20230413161006250.png)
+![image-20230414121959036](gnn/image-20230414121959036.png)
 
 目前的deeplearning 工具由简单的网格和序列构成
 
@@ -44,11 +44,15 @@ Graphs are the new frontierof deep learning
 
 图的模型
 
-![image-20230413161147088](D:\blog2023\hexo-beantech\source\img\image-20230413161147088.png)
+![image-20230414122026839](gnn/image-20230414122026839.png)
 
-![image-20230413161822510](D:\blog2023\hexo-beantech\source\img\image-20230413161822510.png)
+lifecycle
+
+![image-20230414122048241](gnn/image-20230414122048241.png)
 
 # Different types of tasks:
+
+![image-20230414122139286](gnn/image-20230414122139286.png)
 
 graph ml task
 
@@ -70,20 +74,21 @@ Graph evolution：物理模拟
 
 有向图和无向图：
 
-![image-20230413162225783](C:\Users\22418\AppData\Roaming\Typora\typora-user-images\image-20230413162225783.png)
+
 
 邻接矩阵
 
-![image-20230413162327585](C:\Users\22418\AppData\Roaming\Typora\typora-user-images\image-20230413162327585.png)
+![image-20230414122244515](gnn/image-20230414122244515.png)
 
-计算
+矩阵计算
 
-![image-20230413162354176](C:\Users\22418\AppData\Roaming\Typora\typora-user-images\image-20230413162354176.png)
+![image-20230414122316766](gnn/image-20230414122316766.png)
 
-权重图
+权重图与非权重图
 
-![image-20230413162433343](C:\Users\22418\AppData\Roaming\Typora\typora-user-images\image-20230413162433343.png)
+![image-20230414122340519](gnn/image-20230414122340519.png)
 
-![image-20230413171458279](../img/image-20230413171458279.png)
 
-![image-20230413174221985](gnn/image-20230413174221985.png)
+
+introduction:why graph!
+
