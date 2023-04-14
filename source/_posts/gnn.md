@@ -16,7 +16,7 @@ tags:
 
 图的种类
 
-![image-20230414121900420](gnn/image-20230414121900420.png)
+![image-20230414134203781](../gnn/image-20230414134203781.png)
 
 
 
@@ -28,7 +28,7 @@ How do we take advantage ofrelational structure for betterprediction?
 
 目前的machine learning 模型
 
-![image-20230414121959036](gnn/image-20230414121959036.png)
+![image-20230414134224413](../gnn/image-20230414134224413.png)
 
 目前的deeplearning 工具由简单的网格和序列构成
 
@@ -44,15 +44,15 @@ Graphs are the new frontierof deep learning
 
 图的模型
 
-![image-20230414122026839](gnn/image-20230414122026839.png)
+![image-20230414134250644](../gnn/image-20230414134250644.png)
 
 lifecycle
 
-![image-20230414122048241](gnn/image-20230414122048241.png)
+![image-20230414134310504](../gnn/image-20230414134310504.png)
 
 # Different types of tasks:
 
-![image-20230414122139286](gnn/image-20230414122139286.png)
+![image-20230414134329718](../gnn/image-20230414134329718.png)
 
 graph ml task
 
@@ -78,17 +78,17 @@ Graph evolution：物理模拟
 
 邻接矩阵
 
-![image-20230414122244515](gnn/image-20230414122244515.png)
+![image-20230414134401401](../gnn/image-20230414134401401.png)
 
 矩阵计算
 
-![image-20230414122316766](gnn/image-20230414122316766.png)
+![image-20230414134501255](../gnn/image-20230414134501255.png)
 
 权重图与非权重图
 
-![image-20230414122340519](gnn/image-20230414122340519.png)
+![image-20230414134519583](../gnn/image-20230414134519583.png)
 
 
 
-introduction:why graph!
+introduction:why graph!接下去看李牧的gnn入门课
 
