@@ -16,19 +16,17 @@ tags:
 
 图的种类
 
-![image-20230413165416997](gnn.assets/image-20230413165416997.png)
-
 
 
 How do we take advantage ofrelational structure for betterprediction?
 
 为了更好的预测关系！
 
-
+![image-20230417090423164](gnn/image-20230417090423164.png)
 
 目前的machine learning 模型
 
-![image-20230413161006250](D:\blog2023\hexo-beantech\source\img\image-20230413161006250.png)
+![image-20230414150959294](../img/gnn/image-20230414150959294.png)
 
 目前的deeplearning 工具由简单的网格和序列构成
 
@@ -44,11 +42,15 @@ Graphs are the new frontierof deep learning
 
 图的模型
 
-![image-20230413161147088](D:\blog2023\hexo-beantech\source\img\image-20230413161147088.png)
+![image-20230414151024004](../img/gnn/image-20230414151024004.png)
 
-![image-20230413161822510](D:\blog2023\hexo-beantech\source\img\image-20230413161822510.png)
+lifecycle
+
+![image-20230414151046698](../img/gnn/image-20230414151046698.png)
 
 # Different types of tasks:
+
+![image-20230414151106800](../img/gnn/image-20230414151106800.png)
 
 graph ml task
 
@@ -70,20 +72,21 @@ Graph evolution：物理模拟
 
 有向图和无向图：
 
-![image-20230413162225783](C:\Users\22418\AppData\Roaming\Typora\typora-user-images\image-20230413162225783.png)
+
 
 邻接矩阵
 
-![image-20230413162327585](C:\Users\22418\AppData\Roaming\Typora\typora-user-images\image-20230413162327585.png)
+![image-20230414151133631](../img/gnn/image-20230414151133631.png)
 
-计算
+矩阵计算
 
-![image-20230413162354176](C:\Users\22418\AppData\Roaming\Typora\typora-user-images\image-20230413162354176.png)
+![image-20230414151156446](../img/gnn/image-20230414151156446.png)
 
-权重图
+权重图与非权重图
 
-![image-20230413162433343](C:\Users\22418\AppData\Roaming\Typora\typora-user-images\image-20230413162433343.png)
+![image-20230414151217271](../img/gnn/image-20230414151217271.png)
 
-![image-20230413171458279](../img/image-20230413171458279.png)
 
-![image-20230413174221985](gnn/image-20230413174221985.png)
+
+introduction:why graph!接下去看李牧的gnn入门课
+
