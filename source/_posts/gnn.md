@@ -16,7 +16,7 @@ tags:
 
 图的种类
 
-![image-20230414150932469](../img/gnn/image-20230414150932469.png)
+![image-20230417085152080](gnn/image-20230417085152080.png)
 
 How do we take advantage ofrelational structure for betterprediction?
 
