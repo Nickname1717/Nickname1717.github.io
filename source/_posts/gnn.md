@@ -16,13 +16,13 @@ tags:
 
 图的种类
 
-![image-20230417085152080](gnn/image-20230417085152080.png)
+
 
 How do we take advantage ofrelational structure for betterprediction?
 
 为了更好的预测关系！
 
-
+![image-20230417090423164](gnn/image-20230417090423164.png)
 
 目前的machine learning 模型
 
