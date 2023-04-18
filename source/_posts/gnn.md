@@ -22,7 +22,7 @@ How do we take advantage ofrelational structure for betterprediction?
 
 为了更好的预测关系！
 
-![image-20230417090423164](gnn/image-20230417090423164.png)
+![image-20230414150932469](../img/gnn/image-20230414150932469.png)
 
 目前的machine learning 模型
 
