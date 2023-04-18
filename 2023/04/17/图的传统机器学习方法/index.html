@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          图的传统机器学习方法 - nickname
+          &#39;图的传统机器学习方法&#39; - nickname
         
     </title>
 
-    <link rel="canonical" href="http://yoursite-url/2023/04/14/图的传统机器学习方法/">
+    <link rel="canonical" href="http://yoursite-url/2023/04/17/图的传统机器学习方法/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -69,7 +69,7 @@
 <style type="text/css">
     header.intro-header{
         
-            background-image: url('null')
+            background-image: url('uday-awal-Pzyk_baaV1Y-unsplash.jpg')
             /*post*/
         
     }
@@ -86,12 +86,14 @@
                     <div class="post-heading">
                         <div class="tags">
                             
+                              <a class="tag" href="/tags/#-gnn" title="-gnn">-gnn</a>
+                            
                         </div>
-                        <h1>图的传统机器学习方法</h1>
+                        <h1>&#39;图的传统机器学习方法&#39;</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by 赵家池 on
-                            2023-04-14
+                            2023-04-17
                         </span>
                     </div>
                 
@@ -138,13 +140,6 @@
 
                         
                         <li>
-                            <a href="/tags/">Tags</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
                             <a href="/about/">About</a>
                         </li>
                         
@@ -153,6 +148,13 @@
                         
                         <li>
                             <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
                         </li>
                         
                     
@@ -208,7 +210,34 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                
+                <p>三种预测</p>
+<p>1.Node-level prediction</p>
+<p>2.Link-level predictionLink</p>
+<p>3.Graph-level prediction</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417204057751.png" alt="image-20230417204057751"></p>
+<p>传统机器学习模型</p>
+<p>1.随机森林</p>
+<p>2.svm</p>
+<p>3.神经网络</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417204149650.png" alt="image-20230417204149650"></p>
+<p>将图应用于模型 给定节点 边 图 来实现预测。</p>
+<h4><span id="1node-level">1.node-level</span></h4><p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417204601901.png" alt="image-20230417204601901"></p>
+<p>模型重要性的不同区分（Cv）</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417205252569.png" alt="image-20230417205252569"></p>
+<p>1.Eigenvector centrality（特征向量）</p>
+<p>节点v的Cv为所有邻居的Cu之和</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417215407529.png" alt="image-20230417215407529"></p>
+<p>由于采用了递归方式recursive manner，采用邻接矩阵形式重新计算（如果点u是v的邻居 Auv 为1）</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417215608315.png" alt="image-20230417215608315"></p>
+<p>2.Betweenness centrality （中介？）</p>
+<p>example</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417220322134.png" alt="image-20230417220322134"></p>
+<p>3.Closeness centrality</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417220524325.png" alt="image-20230417220524325"></p>
+<p>Clustering coefficient(聚类系数)计算  就是在计算闭环三角形的数量</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417220759397.png" alt="image-20230417220759397"></p>
+<p>引出 graphlets 的概念</p>
+
                 
 
                 <hr>
@@ -217,7 +246,7 @@
                     
                     
                         <li class="next">
-                            <a href="/2023/04/13/start/" data-toggle="tooltip" data-placement="top" title="">Next Post &rarr;</a>
+                            <a href="/2023/04/12/gnn/" data-toggle="tooltip" data-placement="top" title="初识GNN">Next Post &rarr;</a>
                         </li>
                     
                 </ul>
@@ -247,7 +276,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="nav">none</ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">1.node-level</span></a></li></ol>
         
         </div>
       </aside>
@@ -267,6 +296,8 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
+                          <a class="tag" href="/tags/#-gnn" title="-gnn">-gnn</a>
+                        
                     </div>
                 </section>
                 
@@ -285,8 +316,8 @@
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "your-disqus-ID";
-    var disqus_identifier = "http://yoursite-url/2023/04/14/图的传统机器学习方法/";
-    var disqus_url = "http://yoursite-url/2023/04/14/图的传统机器学习方法/";
+    var disqus_identifier = "http://yoursite-url/2023/04/17/图的传统机器学习方法/";
+    var disqus_url = "http://yoursite-url/2023/04/17/图的传统机器学习方法/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
