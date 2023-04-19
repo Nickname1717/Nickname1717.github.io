@@ -140,14 +140,14 @@
 
                         
                         <li>
-                            <a href="/about/">About</a>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
+                            <a href="/about/">About</a>
                         </li>
                         
                     
@@ -214,50 +214,48 @@
 <p>1.Node-level prediction</p>
 <p>2.Link-level predictionLink</p>
 <p>3.Graph-level prediction</p>
-<p><img src="../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417204057751.png" alt="image-20230417204057751"></p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417204057751.png" alt="image-20230417204057751"></p>
 <p>传统机器学习模型</p>
 <p>1.随机森林</p>
 <p>2.svm</p>
 <p>3.神经网络</p>
-<p><img src="../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417204149650.png" alt="image-20230417204149650"></p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417204149650.png" alt="image-20230417204149650"></p>
 <p>将图应用于模型 给定节点 边 图 来实现预测。</p>
-<h4><span id="1node-level">1.node-level</span></h4>
-<p><img src="../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417204601901.png" alt="image-20230417204601901"></p>
+<h4><span id="1node-level">1.node-level</span></h4><p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417204601901.png" alt="image-20230417204601901"></p>
 <p>模型重要性的不同区分（Cv）</p>
-<p><img src="../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417205252569.png" alt="image-20230417205252569"></p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417205252569.png" alt="image-20230417205252569"></p>
 <p>1.Eigenvector centrality（特征向量）</p>
 <p>节点v的Cv为所有邻居的Cu之和</p>
-<p><img src="../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417215407529.png" alt="image-20230417215407529"></p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417215407529.png" alt="image-20230417215407529"></p>
 <p>由于采用了递归方式recursive manner，采用邻接矩阵形式重新计算（如果点u是v的邻居 Auv 为1）</p>
-<p><img src="../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417215608315.png" alt="image-20230417215608315"></p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417215608315.png" alt="image-20230417215608315"></p>
 <p>2.Betweenness centrality （中介？）</p>
 <p>example</p>
-<p><img src="../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417220322134.png" alt="image-20230417220322134"></p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417220322134.png" alt="image-20230417220322134"></p>
 <p>3.Closeness centrality</p>
-<p><img src="../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417220524325.png" alt="image-20230417220524325"></p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417220524325.png" alt="image-20230417220524325"></p>
 <p>Clustering coefficient(聚类系数)计算  就是在计算闭环三角形的数量</p>
-<p><img src="../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417220759397.png" alt="image-20230417220759397"></p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417220759397.png" alt="image-20230417220759397"></p>
 <p>引出 graphlets 的概念</p>
 <p>获取节点特征的两种方法</p>
-<p>1.基于特征重要性的方法</p>
+<p>1.基于特征重要性的方法  </p>
 <p>例如预测社会关系网上的著名人物</p>
 <p>2.基于结构的方法</p>
 <p>例如预测蛋白质结构</p>
-<h4><span id="2link-level-预测">2.link -level  预测</span></h4>
-<p>预测link 的两种方式</p>
+<h4><span id="2link-level-预测">2.link -level  预测</span></h4><p>预测link 的两种方式</p>
 <p>1.随机删除边，并进行预测</p>
 <p>2.预测随时间变化的图</p>
-<p><img src="../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230419150145767.png" alt="image-20230419150145767"></p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230419150145767.png" alt="image-20230419150145767"></p>
 <p>根据score c 进行排序，最大的值便为预测的边</p>
 <p>特征化或创建两个节点的关系 的三种方法</p>
 <p>1.Distance-based feature</p>
-<p><img src="../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230419150544233.png" alt="image-20230419150544233"></p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230419150544233.png" alt="image-20230419150544233"></p>
 <p>但是不能准确邻居节点</p>
 <p>2.Local neighborhood overlap</p>
-<p><img src="../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230419150805549.png" alt="image-20230419150805549"></p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230419150805549.png" alt="image-20230419150805549"></p>
 <p>这里三种方式很简单，随便看一下就好了</p>
 <p>3.Global neighborhood overlap</p>
-<p><img src="../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230419150918972.png" alt="image-20230419150918972"></p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230419150918972.png" alt="image-20230419150918972"></p>
 <p>但是有可能会在未来出现</p>
 <p>60</p>
 
