@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          初识GNN - nickname
+          图的传统机器学习方法 - nickname
         
     </title>
 
-    <link rel="canonical" href="http://yoursite-url/2023/04/12/gnn/">
+    <link rel="canonical" href="http://yoursite-url/2023/04/17/图的传统机器学习方法/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -69,7 +69,7 @@
 <style type="text/css">
     header.intro-header{
         
-            background-image: url('samuel-bourke-sc-B_2-Om7Q-unsplash.jpg')
+            background-image: url('uday-awal-Pzyk_baaV1Y-unsplash.jpg')
             /*post*/
         
     }
@@ -88,14 +88,12 @@
                             
                               <a class="tag" href="/tags/#gnn" title="gnn">gnn</a>
                             
-                              <a class="tag" href="/tags/#machine learning" title="machine learning">machine learning</a>
-                            
                         </div>
-                        <h1>初识GNN</h1>
-                        <h2 class="subheading">斯坦福Machine Learning with Graphs</h2>
+                        <h1>图的传统机器学习方法</h1>
+                        <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by 赵家池 on
-                            2023-04-12
+                            2023-04-17
                         </span>
                     </div>
                 
@@ -212,39 +210,65 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h1><span id="machine-learning-with-graphs">Machine learning with Graphs</span></h1><h4><span id></span></h4><p>图的种类</p>
-<p>How do we take advantage ofrelational structure for betterprediction?</p>
-<p>为了更好的预测关系！</p>
-<p><img src="/../img/gnn/image-20230414150932469.png" alt="image-20230414150932469"></p>
-<p>目前的machine learning 模型</p>
-<p><img src="/../img/gnn/image-20230414150959294.png" alt="image-20230414150959294"></p>
-<p>目前的deeplearning 工具由简单的网格和序列构成</p>
-<p>与神经网络相比：</p>
-<p>1.节点位置任意，结构复杂</p>
-<p>2.没有固定的节点顺序</p>
-<p>3.动态，多模态</p>
-<p>Graphs are the new frontierof deep learning</p>
-<p>图的模型</p>
-<p><img src="/../img/gnn/image-20230414151024004.png" alt="image-20230414151024004"></p>
-<p>lifecycle</p>
-<p><img src="/../img/gnn/image-20230414151046698.png" alt="image-20230414151046698"></p>
-<h1><span id="different-types-of-tasks">Different types of tasks:</span></h1><p><img src="/../img/gnn/image-20230414151106800.png" alt="image-20230414151106800"></p>
-<p>graph ml task</p>
-<p>1.Node classification 比如上网用户分类</p>
-<p>2.Link prediction 比如知识图谱</p>
-<p>3.Graph classification 比如分子性质预测</p>
-<p>4.Clustering 比如社会关系</p>
-<p>5.Other tasks：</p>
-<p>Graph generation：药物</p>
-<p>Graph evolution：物理模拟</p>
-<h1><span id="choice-of-a-graph-representation">Choice of a graph representation：</span></h1><p>有向图和无向图：</p>
-<p>邻接矩阵</p>
-<p><img src="/../img/gnn/image-20230414151133631.png" alt="image-20230414151133631"></p>
-<p>矩阵计算</p>
-<p><img src="/../img/gnn/image-20230414151156446.png" alt="image-20230414151156446"></p>
-<p>权重图与非权重图</p>
-<p><img src="/../img/gnn/image-20230414151217271.png" alt="image-20230414151217271"></p>
-<p>introduction:why graph!接下去看李牧的gnn入门课</p>
+                <p>三种预测</p>
+<p>1.Node-level prediction</p>
+<p>2.Link-level predictionLink</p>
+<p>3.Graph-level prediction</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417204057751.png" alt="image-20230417204057751"></p>
+<p>传统机器学习模型</p>
+<p>1.随机森林</p>
+<p>2.svm</p>
+<p>3.神经网络</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417204149650.png" alt="image-20230417204149650"></p>
+<p>将图应用于模型 给定节点 边 图 来实现预测。</p>
+<h4><span id="1node-level">1.node-level</span></h4><p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417204601901.png" alt="image-20230417204601901"></p>
+<p>模型重要性的不同区分（Cv）</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417205252569.png" alt="image-20230417205252569"></p>
+<p>1.Eigenvector centrality（特征向量）</p>
+<p>节点v的Cv为所有邻居的Cu之和</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417215407529.png" alt="image-20230417215407529"></p>
+<p>由于采用了递归方式recursive manner，采用邻接矩阵形式重新计算（如果点u是v的邻居 Auv 为1）</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417215608315.png" alt="image-20230417215608315"></p>
+<p>2.Betweenness centrality （中介？）</p>
+<p>example</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417220322134.png" alt="image-20230417220322134"></p>
+<p>3.Closeness centrality</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417220524325.png" alt="image-20230417220524325"></p>
+<p>Clustering coefficient(聚类系数)计算  就是在计算闭环三角形的数量</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230417220759397.png" alt="image-20230417220759397"></p>
+<p>引出 graphlets 的概念</p>
+<p>获取节点特征的两种方法</p>
+<p>1.基于特征重要性的方法  </p>
+<p>例如预测社会关系网上的著名人物</p>
+<p>2.基于结构的方法</p>
+<p>例如预测蛋白质结构</p>
+<h4><span id="2link-level-预测">2.link -level  预测</span></h4><p>预测link 的两种方式</p>
+<p>1.随机删除边，并进行预测</p>
+<p>2.预测随时间变化的图</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230419150145767.png" alt="image-20230419150145767"></p>
+<p>根据score c 进行排序，最大的值便为预测的边</p>
+<p>特征化或创建两个节点的关系 的三种方法</p>
+<p>1.Distance-based feature</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230419150544233.png" alt="image-20230419150544233"></p>
+<p>但是不能准确邻居节点</p>
+<p>2.Local neighborhood overlap</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230419150805549.png" alt="image-20230419150805549"></p>
+<p>这里三种方式很简单，随便看一下就好了</p>
+<p>3.Global neighborhood overlap</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230419150918972.png" alt="image-20230419150918972"></p>
+<p>但是有可能会在未来出现</p>
+<h4><span id="3graph-level">3.graph -level</span></h4><p>idea</p>
+<p>1.Bag-of-Words (BoW) for a graph 词袋</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230424163358806.png" alt="image-20230424163358806"></p>
+<p>2.计算graphlets 数量</p>
+<p>与node-level的区别</p>
+<p>1.允许独立节点存在，不需要连接</p>
+<p>2.没有根节点</p>
+<p>图特征转换为向量形式</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230426085045251.png" alt="image-20230426085045251"></p>
+<p>Color refinement</p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230426090837425.png" alt="image-20230426090837425"></p>
+<p><img src="/../img/%E5%9B%BE%E7%9A%84%E4%BC%A0%E7%BB%9F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/image-20230426090901424.png" alt="image-20230426090901424"></p>
 
                 
 
@@ -252,10 +276,10 @@
                 <!-- Pager -->
                 <ul class="pager">
                     
-                        <li class="previous">
-                            <a href="/2023/04/17/图的传统机器学习方法/" data-toggle="tooltip" data-placement="top" title="图的传统机器学习方法">&larr; Previous Post</a>
-                        </li>
                     
+                        <li class="next">
+                            <a href="/2023/04/12/gnn/" data-toggle="tooltip" data-placement="top" title="初识GNN">Next Post &rarr;</a>
+                        </li>
                     
                 </ul>
 
@@ -284,7 +308,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Machine learning with Graphs</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.0.0.1.</span> <span class="toc-nav-text"></span></a></li></ol></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">Different types of tasks:</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">Choice of a graph representation：</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">1.node-level</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">2.link -level  预测</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">3.graph -level</span></a></li></ol>
         
         </div>
       </aside>
@@ -306,8 +330,6 @@
                        
                           <a class="tag" href="/tags/#gnn" title="gnn">gnn</a>
                         
-                          <a class="tag" href="/tags/#machine learning" title="machine learning">machine learning</a>
-                        
                     </div>
                 </section>
                 
@@ -326,8 +348,8 @@
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "your-disqus-ID";
-    var disqus_identifier = "http://yoursite-url/2023/04/12/gnn/";
-    var disqus_url = "http://yoursite-url/2023/04/12/gnn/";
+    var disqus_identifier = "http://yoursite-url/2023/04/17/图的传统机器学习方法/";
+    var disqus_url = "http://yoursite-url/2023/04/17/图的传统机器学习方法/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
