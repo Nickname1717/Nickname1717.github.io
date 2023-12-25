@@ -3,7 +3,7 @@ title: Merry Christmax Ding sir
 catalog: true
 date: 2023-12-25 12:41:54
 subtitle:
-header-img:
+header-img: c.png
 tags:
 ---
 
